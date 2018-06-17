@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  ActiveAdmin.routes(self)
   root :to => "wines#index"
   # Routes for the Rating resource:
   # CREATE

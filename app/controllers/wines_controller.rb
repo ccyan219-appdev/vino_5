@@ -6,6 +6,8 @@ class WinesController < ApplicationController
   end
 
   def show
+    @rating = Rating.new
+    @listing = Listing.new
     @wine = Wine.find(params[:id])
 
     render("wines/show.html.erb")
